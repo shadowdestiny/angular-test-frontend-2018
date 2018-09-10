@@ -1,0 +1,17 @@
+@import '../../scss/_partial/mixins/objects';
+@import '../../scss/_partial/vars/fonts';
+@import '../../scss/_partial/vars/color';
+div.squares {
+  @include squares(60px);
+};
+.contact-section hr{
+  margin-left: 0;
+}
+.contact-squares{
+  position: relative;
+}
+.contact-squares .squares{
+  width: 95px;
+  top: -8px;
+  left: 24px;
+}

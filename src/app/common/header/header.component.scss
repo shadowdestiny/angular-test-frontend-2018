@@ -1,0 +1,20 @@
+@import '../../scss/_partial/vars/fonts';
+@import '../../scss/_partial/vars/images';
+@import '../../scss/_partial/mixins/objects';
+
+.nav-item a{
+  color:$font-color-menu;
+  font-weight: bold;
+  font-size: $font-size-menu;
+};
+
+.nav-item div.squares {
+  @include squares();
+};
+
+.bg-light{
+  background-color: transparent!important;
+}
+.navbar{
+  padding: 40px;
+}

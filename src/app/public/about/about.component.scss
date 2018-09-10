@@ -1,0 +1,56 @@
+@import '../../scss/_partial/mixins/objects';
+@import '../../scss/_partial/vars/fonts';
+@import '../../scss/_partial/vars/color';
+.about-table{
+  width:200px;
+}
+.about-content{
+  position: relative;
+  padding-left: 80px;
+}
+.about-content.invertion{
+  padding-left: 20px;
+  padding-right: 100px;
+}
+.about-hr-position{
+  position: absolute;
+  left: -24px;
+  top: -3px;
+}
+.image-about{
+  position: relative;
+  width: max-content;
+  margin-left: auto;
+}
+.image-about.revert{
+  text-align: left;
+  margin-right: auto;
+}
+.img-about{
+  width:300px
+}
+.image-about .image-number{
+  position: absolute;
+  top: -40px;
+  left: -27px;
+}
+.image-about .image-number.invert{
+  right: auto;
+  left: 264px;
+
+}
+.left-image-bg{
+  position: absolute;
+  bottom: -34px;
+  right: -41px;
+  z-index: -1;
+}
+.right-image-bg{
+  position: absolute;
+  bottom: -34px;
+  right: 235px;
+  z-index: -1;
+}
+.position-text{
+  margin-left: 100px;
+}

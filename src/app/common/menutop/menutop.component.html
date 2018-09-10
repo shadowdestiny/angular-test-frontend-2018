@@ -1,0 +1,26 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="./assets/images/logo.png"  alt="">
+  </a>
+
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <div class="squares" *ngIf="_type_menu=='home';"></div>
+      <a class="nav-link {{_type_menu=='home' ? 'active' : ''}}" (click)="clickHome()" href="javascript:void(0)">Home.</a>
+    </li>
+    <li class="nav-item">
+      <div class="squares" *ngIf="_type_menu=='about';"></div>
+      <a class="nav-link {{_type_menu=='about' ? 'active' : ''}}" (click)="clickAbout()" href="javascript:void(0)">About Me.</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Work.</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Journal.</a>
+    </li>
+    <li class="nav-item">
+      <div class="squares" *ngIf="_type_menu=='contact';"></div>
+      <a class="nav-link {{_type_menu=='contact' ? 'active' : ''}}" (click)="clickContact()" href="javascript:void(0)">Contact.</a>
+    </li>
+  </ul>
+</nav>
